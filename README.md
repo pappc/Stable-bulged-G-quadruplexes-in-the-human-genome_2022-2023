@@ -1,7 +1,23 @@
-# pG4-BS_2021
+# Originally written by: xxxxxxx
+# Modified by Csaba Papp (2020-2021)
 Project data for the pG4-BS manuscript (2021)
 
-This is a documentation of the steps I took in my analysis of G4BS motifs in the human genome. 
+This is a documentation of the steps we took in our analysis of potential bulged G4 forming sequences (pG4-BS) and potential canonical G4 forming sequences (pG4-CS) in the human genome (hg38). 
+
+We set up our search algorithm to select sequences that fit the given regular expression. We also introduced additional filters as detailed below. 
+pG4-BS search: 
+- the number of interrupted stems is maximum 2
+- the number of bulge sites in the whole sequence is maximum 2
+- the length of the loops connecting the stems must have length 3 or less nucleotides
+- the overall sequence cannot contain contiguous cytosine bases (e.g., CC, CCC)
+
+pG4-CS search:
+- must contain 4 stems (clusters of 3 or more guanines)
+- loop length must be beween 1 and 7 nucleotides
+- no additional filters were used
+
+The actual scripts require Python 2.7 to run.
+The exact steps taken in our workflow are as follows:
 
 1. I ran the g4_bulge_finder.v4.py script on the Hg38 human genome assambly with options '-g 2' and 
 '-b 2', allowing for a minimum of 2 intact G-runs and a maximum of 2 bulge sites. 
