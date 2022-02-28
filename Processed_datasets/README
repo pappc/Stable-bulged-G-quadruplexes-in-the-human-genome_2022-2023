@@ -9,3 +9,10 @@ g4bs.Hg38.uniq.no_repEle.merged.txt
 
 All data sets underwent the same processing steps:
 - overlaps between each "g4bs" data set and cG4_L7.Hg38.uniq.no_repEle.merged.txt were removed, resulting in unique (non-overlapping) genomic regions in all data sets
+- genomic regions overlapping with any human repeat element were removed 
+(repeat elements data set was downloaded from: Repeating Elements by RepeatMasker, https://genome.ucsc.edu/cgi-bin/hgTrackUi?g=rmsk)
+- in each given data set overlapping regions were merged together using the bedtools merge function of the bedtools toolbox
+- Data sets "g4bs.Hg38.uniq.G2B2.no_repEle.merged.txt", "g4bs.Hg38.uniq.G3B1.no_repEle.merged.txt" and "g4bs.Hg38.uniq.G3B2.no_repEle.merged.txt" contain potential bulged 
+  G-quadruplex forming sequence (pG4-BS) model specific merged regions (e.g., G3B1, G3B2, G2B2). The number following "G" refers to the number of intact stem regions,
+  while the number following "B" refers to the number of bulge sites in the sequence. For more detailed explanation please see the associated publication. 
+- 
