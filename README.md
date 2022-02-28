@@ -37,9 +37,8 @@ filtered for canonical chromosome hits:
 #python g4_canonical_finder.py ../../Genomes/hg38.fa > cG4_L7.Hg38.raw.txt
 #awk '$1 ~ /^(chr[1-9]|chr[1-9][0-9]|chr[XY])$/' cG4_L7.Hg38.raw.txt > cG4_L7.Hg38.txt
 
-The cG4 finder is now able to identify overlapping sequences, so running that on Hg38 is the preferred method.
+The 'g4_canonical_finder.py' is now able to identify overlapping sequences, so running that on Hg38 is the preferred method.
 
-The following steps were rerun, but the method remains unchanged. 
 ============================================================================================
 3. Next, I excluded overlapping hits from both datasets: 
 
