@@ -1,0 +1,11 @@
+This document provides details for the processed data sets uploaded in this folder. 
+
+These are:
+cG4_L7.Hg38.uniq.no_repEle.merged.txt
+g4bs.Hg38.uniq.G2B2.no_repEle.merged.txt
+g4bs.Hg38.uniq.G3B1.no_repEle.merged.txt
+g4bs.Hg38.uniq.G3B2.no_repEle.merged.txt
+g4bs.Hg38.uniq.no_repEle.merged.txt
+
+All data sets underwent the same processing steps:
+- overlaps between each "g4bs" data set and cG4_L7.Hg38.uniq.no_repEle.merged.txt were removed, resulting in unique (non-overlapping) genomic regions in all data sets
