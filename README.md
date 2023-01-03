@@ -1,6 +1,6 @@
-# Originally written by: xxxxxxx
-# Modified by Csaba Papp (2020-2021)
-Project data for the pG4-BS manuscript (2021)
+# Original algorithm developed by: Dr. Piroon Jenjaroenpun
+# Updated and modified by Csaba Papp (2020-2023)
+Project data for the pG4-BS manuscript (2022/2023)
 
 This is a documentation of the steps we took in our analysis of potential bulged G4 forming sequences (pG4-BS) and potential canonical G4 forming sequences (pG4-CS) in the human genome (hg38). 
 
